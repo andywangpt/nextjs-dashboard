@@ -1,12 +1,13 @@
-import AcmeLogo from '@/app/ui/acme-logo';
+import AcmeLogo from '@/app/ui/acme-logo'
 import styles from '@/app/ui/home.module.css'
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon } from '@heroicons/react/24/outline'
 import { lusitana } from '@/app/ui/fonts'
 import Image from 'next/image'
 
-import Link from 'next/link';
+
+import Link from 'next/link'
 export default function Page() {
-  return (
+	return (
 		<main className='flex min-h-screen flex-col p-6'>
 			<div className='flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52'>
 				<AcmeLogo />
@@ -44,18 +45,18 @@ export default function Page() {
 						height={760}
 						className='hidden md:block'
 						alt='Screenshots of the dashboard project showing desktop and mobile versions'
-				  />
-				  <Image
-					  src='/hero-mobile.png'
-					  width={560}
-					  height={620}
-					  className='block md:hidden'
-					  alt='screenshots of dashboard project showing desktop and mobile versions'
-				  />
+					/>
+					<Image
+						src='/hero-mobile.png'
+						width={560}
+						height={620}
+						className='block md:hidden'
+						alt='screenshots of dashboard project showing desktop and mobile versions'
+					/>
 				</div>
 			</div>
 		</main>
-  )
+	)
 }
 //dkdifndf this a a mechanical keyoard
 //className={`${lusitana.className} antialiased`
